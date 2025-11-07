@@ -1,4 +1,4 @@
-import { initializeApp } from "firebase/app"
+import { initializeApp, setLogLevel } from "firebase/app"
 import { getFirestore } from "firebase/firestore"
 import { getAuth } from "firebase/auth"
 // import { initializeAppCheck, ReCaptchaV3Provider } from "firebase/app-check"
@@ -16,6 +16,7 @@ const app = initializeApp(firebaseConfig)
 
 if (import.meta.env.DEV) {
   self.FIREBASE_APPCHECK_DEBUG_TOKEN = true
+  setLogLevel('debug');
 }
 
 // initializeAppCheck(app, {
