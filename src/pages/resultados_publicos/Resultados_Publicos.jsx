@@ -303,13 +303,15 @@ function ResultadosPublicos() {
         </h2>
 
         {/* Botones de Navegación por Pestañas */}
-        <div className="flex justify-center border-b-2 border-gray-200 mb-4 sm:mb-6">
-          <button onClick={() => setPaginaActual(0)} className={`px-3 py-1 text-xs sm:px-4 sm:py-2 sm:text-sm font-semibold rounded-t-lg transition ${paginaActual === 0 ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Visitantes</button>
-          <button onClick={() => setPaginaActual(1)} className={`px-3 py-1 text-xs sm:px-4 sm:py-2 sm:text-sm font-semibold rounded-t-lg transition ${paginaActual === 1 ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Carreras</button>
-          <button onClick={() => setPaginaActual(2)} className={`px-3 py-1 text-xs sm:px-4 sm:py-2 sm:text-sm font-semibold rounded-t-lg transition ${paginaActual === 2 ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Opiniones</button>
-          <button onClick={() => setPaginaActual(3)} className={`px-3 py-1 text-xs sm:px-4 sm:py-2 sm:text-sm font-semibold rounded-t-lg transition ${paginaActual === 3 ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Exposiciones</button>
-          <button onClick={() => setPaginaActual(4)} className={`px-3 py-1 text-xs sm:px-4 sm:py-2 sm:text-sm font-semibold rounded-t-lg transition ${paginaActual === 4 ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Diseño Web</button>
-          <button onClick={() => setPaginaActual(5)} className={`px-3 py-1 text-xs sm:px-4 sm:py-2 sm:text-sm font-semibold rounded-t-lg transition ${paginaActual === 5 ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Final</button>
+        <div className="border-b-2 border-gray-200 mb-4 sm:mb-6">
+          <div className="flex justify-start sm:justify-center overflow-x-auto scrollbar-hide">
+            <button onClick={() => setPaginaActual(0)} className={`whitespace-nowrap px-3 py-1 text-xs sm:px-4 sm:py-2 sm:text-sm font-semibold rounded-t-lg transition ${paginaActual === 0 ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Visitantes</button>
+            <button onClick={() => setPaginaActual(1)} className={`whitespace-nowrap px-3 py-1 text-xs sm:px-4 sm:py-2 sm:text-sm font-semibold rounded-t-lg transition ${paginaActual === 1 ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Carreras</button>
+            <button onClick={() => setPaginaActual(2)} className={`whitespace-nowrap px-3 py-1 text-xs sm:px-4 sm:py-2 sm:text-sm font-semibold rounded-t-lg transition ${paginaActual === 2 ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Opiniones</button>
+            <button onClick={() => setPaginaActual(3)} className={`whitespace-nowrap px-3 py-1 text-xs sm:px-4 sm:py-2 sm:text-sm font-semibold rounded-t-lg transition ${paginaActual === 3 ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Exposiciones</button>
+            <button onClick={() => setPaginaActual(4)} className={`whitespace-nowrap px-3 py-1 text-xs sm:px-4 sm:py-2 sm:text-sm font-semibold rounded-t-lg transition ${paginaActual === 4 ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Diseño Web</button>
+            <button onClick={() => setPaginaActual(5)} className={`whitespace-nowrap px-3 py-1 text-xs sm:px-4 sm:py-2 sm:text-sm font-semibold rounded-t-lg transition ${paginaActual === 5 ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Final</button>
+          </div>
         </div>
 
         {error && (
