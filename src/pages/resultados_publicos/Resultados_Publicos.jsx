@@ -383,11 +383,13 @@ function ResultadosPublicos() {
                       })()}
 
                       {/* Navegación por especialidad para 1º a 3º / Otros */}
-                      <div className="md:col-span-full flex justify-center border-b-2 border-gray-200 my-4 sm:my-6"> 
-                        <button onClick={() => setSubPaginaEspecialidad('informatica')} className={`px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaEspecialidad === 'informatica' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Informática</button>
-                        <button onClick={() => setSubPaginaEspecialidad('construccion')} className={`px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaEspecialidad === 'construccion' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Construcción</button>
-                        <button onClick={() => setSubPaginaEspecialidad('electromecanica')} className={`px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaEspecialidad === 'electromecanica' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Electromecánica</button>
-                        <button onClick={() => setSubPaginaEspecialidad('electronica')} className={`px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaEspecialidad === 'electronica' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Electrónica</button>
+                      <div className="md:col-span-full border-b-2 border-gray-200 my-4 sm:my-6">
+                        <div className="flex justify-start sm:justify-center overflow-x-auto scrollbar-hide">
+                          <button onClick={() => setSubPaginaEspecialidad('informatica')} className={`whitespace-nowrap px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaEspecialidad === 'informatica' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Informática</button>
+                          <button onClick={() => setSubPaginaEspecialidad('construccion')} className={`whitespace-nowrap px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaEspecialidad === 'construccion' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Construcción</button>
+                          <button onClick={() => setSubPaginaEspecialidad('electromecanica')} className={`whitespace-nowrap px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaEspecialidad === 'electromecanica' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Electromecánica</button>
+                          <button onClick={() => setSubPaginaEspecialidad('electronica')} className={`whitespace-nowrap px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaEspecialidad === 'electronica' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Electrónica</button>
+                        </div>
                       </div>
                       
                       {/* Preguntas específicas de la especialidad seleccionada */}
@@ -426,11 +428,13 @@ function ResultadosPublicos() {
                     <h3 className="text-sm sm:text-base font-bold text-center text-gray-700 mb-4 sm:mb-6">Estadísticas de "4º a 7º año"</h3>
                     
                     {/* Navegación por especialidad para ciclo superior */}
-                    <div className="flex justify-center border-b-2 border-gray-200 my-6">
-                      <button onClick={() => setSubPaginaEspecialidad('informatica')} className={`px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaEspecialidad === 'informatica' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Informática</button>
-                      <button onClick={() => setSubPaginaEspecialidad('construccion')} className={`px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaEspecialidad === 'construccion' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Construcción</button>
-                      <button onClick={() => setSubPaginaEspecialidad('electromecanica')} className={`px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaEspecialidad === 'electromecanica' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Electromecánica</button>
-                      <button onClick={() => setSubPaginaEspecialidad('electronica')} className={`px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaEspecialidad === 'electronica' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Electrónica</button>
+                    <div className="border-b-2 border-gray-200 my-6">
+                      <div className="flex justify-start sm:justify-center overflow-x-auto scrollbar-hide">
+                        <button onClick={() => setSubPaginaEspecialidad('informatica')} className={`whitespace-nowrap px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaEspecialidad === 'informatica' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Informática</button>
+                        <button onClick={() => setSubPaginaEspecialidad('construccion')} className={`whitespace-nowrap px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaEspecialidad === 'construccion' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Construcción</button>
+                        <button onClick={() => setSubPaginaEspecialidad('electromecanica')} className={`whitespace-nowrap px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaEspecialidad === 'electromecanica' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Electromecánica</button>
+                        <button onClick={() => setSubPaginaEspecialidad('electronica')} className={`whitespace-nowrap px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaEspecialidad === 'electronica' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Electrónica</button>
+                      </div>
                     </div>
 
                     <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -484,12 +488,14 @@ function ResultadosPublicos() {
                 {/* Se ajustó el espaciado de los botones */}
                 {/* Se ajustó el espaciado de los botones */}
                 {/* Se ajustó el espaciado de los botones */}
-                <div className="flex justify-center border-b-2 border-gray-200 my-4 sm:my-6">
-                  <button onClick={() => setSubPaginaEspecialidad('general')} className={`px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaEspecialidad === 'general' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>General</button>
-                  <button onClick={() => setSubPaginaEspecialidad('informatica')} className={`px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaEspecialidad === 'informatica' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Informática</button>
-                  <button onClick={() => setSubPaginaEspecialidad('construccion')} className={`px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaEspecialidad === 'construccion' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Construcción</button>
-                  <button onClick={() => setSubPaginaEspecialidad('electromecanica')} className={`px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaEspecialidad === 'electromecanica' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Electromecánica</button>
-                  <button onClick={() => setSubPaginaEspecialidad('electronica')} className={`px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaEspecialidad === 'electronica' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Electrónica</button>
+                <div className="border-b-2 border-gray-200 my-4 sm:my-6">
+                  <div className="flex justify-start sm:justify-center overflow-x-auto scrollbar-hide">
+                    <button onClick={() => setSubPaginaEspecialidad('general')} className={`whitespace-nowrap px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaEspecialidad === 'general' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>General</button>
+                    <button onClick={() => setSubPaginaEspecialidad('informatica')} className={`whitespace-nowrap px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaEspecialidad === 'informatica' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Informática</button>
+                    <button onClick={() => setSubPaginaEspecialidad('construccion')} className={`whitespace-nowrap px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaEspecialidad === 'construccion' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Construcción</button>
+                    <button onClick={() => setSubPaginaEspecialidad('electromecanica')} className={`whitespace-nowrap px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaEspecialidad === 'electromecanica' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Electromecánica</button>
+                    <button onClick={() => setSubPaginaEspecialidad('electronica')} className={`whitespace-nowrap px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaEspecialidad === 'electronica' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Electrónica</button>
+                  </div>
                 </div>
 
                 <div className="animate-fade-in">
@@ -572,11 +578,13 @@ function ResultadosPublicos() {
                   })()}
 
                   {/* Navegación por especialidad para Exposiciones */}
-                  <div className="md:col-span-full flex justify-center border-b-2 border-gray-200 my-4 sm:my-6"> 
-                    <button onClick={() => setSubPaginaExposicion('informatica')} className={`px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaExposicion === 'informatica' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Informática</button>
-                    <button onClick={() => setSubPaginaExposicion('construccion')} className={`px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaExposicion === 'construccion' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Construcción</button>
-                    <button onClick={() => setSubPaginaExposicion('electromecanica')} className={`px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaExposicion === 'electromecanica' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Electromecánica</button>
-                    <button onClick={() => setSubPaginaExposicion('electronica')} className={`px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaExposicion === 'electronica' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Electrónica</button>
+                  <div className="md:col-span-full border-b-2 border-gray-200 my-4 sm:my-6">
+                    <div className="flex justify-start sm:justify-center overflow-x-auto scrollbar-hide">
+                      <button onClick={() => setSubPaginaExposicion('informatica')} className={`whitespace-nowrap px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaExposicion === 'informatica' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Informática</button>
+                      <button onClick={() => setSubPaginaExposicion('construccion')} className={`whitespace-nowrap px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaExposicion === 'construccion' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Construcción</button>
+                      <button onClick={() => setSubPaginaExposicion('electromecanica')} className={`whitespace-nowrap px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaExposicion === 'electromecanica' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Electromecánica</button>
+                      <button onClick={() => setSubPaginaExposicion('electronica')} className={`whitespace-nowrap px-3 py-2 text-xs sm:text-sm font-semibold rounded-t-lg transition ${subPaginaExposicion === 'electronica' ? 'border-b-2 border-blue-500 text-blue-600' : 'text-gray-500 hover:text-blue-500'}`}>Electrónica</button>
+                    </div>
                   </div>
                   
                   {/* Preguntas específicas de la exposición seleccionada */}

@@ -41,7 +41,7 @@ export const PreguntasEncuesta = [
     siguiente: 'mejorar_de_tu_carrera',
     opciones: [
       { id: 'profesores', texto: 'La calidad de los profesores y las clases.' },
-      { id: 'practicas', texto: 'Las prácticas en el taller y los proyectos reales.' },
+      { id: 'practicas', texto: 'Las prácticas en el taller.' },
       { id: 'compañeros', texto: 'El ambiente y el trabajo con mis compañeros.' },
       { id: 'salida_laboral_propia', texto: 'Las oportunidades laborales que me dará a futuro.' },
       { id: 'no_opina_gusta', texto: 'Prefiero no opinar.' },
@@ -294,9 +294,9 @@ export const PreguntasEncuesta = [
     // El flujo se bifurca según la opción elegida
     opciones: [
       { id: 'expo_informatica', texto: 'Los trabajos de Informática', siguiente: 'gusto_expo_informatica' },
-      { id: 'expo_construccion', texto: 'Los de Construcción', siguiente: 'gusto_expo_construccion' },
-      { id: 'expo_electromecanica', texto: 'Los de Electromecánica', siguiente: 'gusto_expo_electromecanica' },
-      { id: 'expo_electronica', texto: 'Los de Electrónica', siguiente: 'gusto_expo_electronica' },
+      { id: 'expo_construccion', texto: 'Los trabajos de Construcción', siguiente: 'gusto_expo_construccion' },
+      { id: 'expo_electromecanica', texto: 'Los trabajos de Electromecánica', siguiente: 'gusto_expo_electromecanica' },
+      { id: 'expo_electronica', texto: 'Los trabajos de Electrónica', siguiente: 'gusto_expo_electronica' },
     ],
   },
   // --- Preguntas de seguimiento para Exposición de Informática ---
@@ -306,7 +306,7 @@ export const PreguntasEncuesta = [
     siguiente: 'no_gusto_expo_informatica',
     opciones: [
       { id: 'proyectos_software', texto: 'Los proyectos de software y programación.' },
-      { id: 'demostraciones_hardware', texto: 'Las demostraciones de hardware y redes.' },
+      { id: 'demostraciones_hardware', texto: 'Las demostraciones de hardware.' },
       { id: 'creatividad_videojuegos', texto: 'La creatividad de los videojuegos.' },
       { id: 'todo_bien_gusto_info', texto: 'Todo en general estuvo bien.' },
       { id: 'otro_gusto_info', texto: 'Otra cosa (escribe aquí)...', type: 'text' },
