@@ -217,6 +217,7 @@ export const PreguntasEncuesta = [
       { id: 'eliminar_construccion', texto: 'Construcción', siguiente: 'porque_eliminar_construccion' },
       { id: 'eliminar_electromecanica', texto: 'Electromecánica', siguiente: 'porque_eliminar_electromecanica' },
       { id: 'eliminar_electronica', texto: 'Electrónica', siguiente: 'porque_eliminar_electronica' },
+      { id: 'ninguna_eliminar', texto: 'Ninguna', siguiente: 'transicion_a_exposicion' },
     ],
   },
   // --- Preguntas condicionales sobre por qué eliminar ---
