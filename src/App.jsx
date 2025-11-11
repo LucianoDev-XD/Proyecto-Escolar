@@ -7,10 +7,6 @@ import Encuesta from './pages/encuesta/Encuesta.jsx'
 import YaVotaste from "./pages/ya_votaste/YaVotaste.jsx"
 import ResultadosPublicos from "./pages/resultados_publicos/Resultados_Publicos.jsx"
 
-
-
-
-
 function App() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
@@ -22,7 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/encuesta" element={<Encuesta />} />
           <Route path="/ya-votaste" element={<YaVotaste />} />
-          <Route path="/resultado" element={<ResultadosPublicos />} />
+          <Route path="/resultados" element={<ResultadosPublicos />} />
         </Routes>
       </main>
 

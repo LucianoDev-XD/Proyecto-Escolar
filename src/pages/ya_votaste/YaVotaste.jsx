@@ -23,7 +23,7 @@ function YaVotaste() {
         {/* Botón */}
         <div className="pt-4">
           <Link
-            to="/resultado"
+            to="/resultados"
             className="inline-block rounded-md bg-blue-600 px-6 py-3 text-base font-medium text-white shadow-sm transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
           >
             Ver Resultados

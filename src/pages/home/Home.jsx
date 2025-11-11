@@ -65,7 +65,7 @@ function Home() {
                   <span>La encuesta ya está cerrada.</span>
                 </div>
                 <Link
-                  to="/resultado"
+                  to="/resultados"
                   className="inline-block rounded-md bg-blue-600 px-6 py-3 text-sm font-medium text-white transition hover:bg-blue-700"
                 >
                   Ver resultados
@@ -81,7 +81,7 @@ function Home() {
                       <span>¡Gracias por participar! Ya has votado.</span>
                     </div>
                     <Link
-                      to="/resultado"
+                      to="/resultados"
                       className="inline-block rounded-md bg-blue-600 px-6 py-3 text-sm font-medium text-white transition hover:bg-blue-700"
                     >
                       Ver resultados
