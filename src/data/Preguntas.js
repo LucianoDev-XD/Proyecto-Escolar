@@ -419,6 +419,7 @@ export const PreguntasEncuesta = [
       // Si eligen 'diseño', saltamos a la pregunta 'calificacion_diseño_web'
       { id: 'diseño', texto: 'El diseño web', siguiente: 'calificacion_diseño_web' },
       { id: 'preguntas', texto: 'Las Preguntas', siguiente: 'calificacion_preguntas' },
+      { id: 'me_gusto_todo', texto: 'Me gusto todo', siguiente: 'comentario_final' },
       { id: 'otros', texto: 'Otros', siguiente: 'calificacion_otros' },
     ],
   },
